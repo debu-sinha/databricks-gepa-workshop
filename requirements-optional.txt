@@ -1,0 +1,5 @@
+mlflow>=3.5.0
+dspy>=3.0.0
+gepa>=0.1.0
+databricks-openai>=0.4.0
+openai>=1.80.0

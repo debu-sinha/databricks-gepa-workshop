@@ -1,0 +1,15 @@
+[project]
+name = "meta-gepa-smallscale-lab"
+version = "0.1.0"
+description = "Small-scale KARL/GEPA-style enterprise search lab for Databricks notebooks"
+requires-python = ">=3.10"
+authors = [{ name = "Databricks SSA Lab" }]
+dependencies = []
+
+[project.optional-dependencies]
+tracking = ["mlflow>=3.5.0"]
+llm = ["databricks-openai>=0.4.0", "openai>=1.80.0"]
+true_gepa = ["dspy>=3.0.0", "gepa>=0.1.0", "mlflow>=3.5.0", "databricks-openai>=0.4.0", "openai>=1.80.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
