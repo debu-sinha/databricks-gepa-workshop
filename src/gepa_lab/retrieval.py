@@ -6,7 +6,7 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass
 from typing import Iterable
 
-from meta_gepa_lab.data import Document
+from gepa_lab.data import Document
 
 TOKEN_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9\-\.]*")
 

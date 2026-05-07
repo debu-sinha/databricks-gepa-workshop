@@ -5,8 +5,8 @@ import json
 from pathlib import Path
 from typing import Iterable
 
-from meta_gepa_lab.metrics import AggregateMetrics, EvaluationRow
-from meta_gepa_lab.mini_gepa import OptimizerOutput
+from gepa_lab.metrics import AggregateMetrics, EvaluationRow
+from gepa_lab.mini_gepa import OptimizerOutput
 
 
 def ensure_dir(path: str | Path) -> Path:

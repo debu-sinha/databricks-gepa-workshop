@@ -3,8 +3,8 @@ from __future__ import annotations
 from dataclasses import asdict, dataclass
 from statistics import mean
 
-from meta_gepa_lab.agent import AgentRun
-from meta_gepa_lab.data import EvalExample
+from gepa_lab.agent import AgentRun
+from gepa_lab.data import EvalExample
 
 
 def _normalize(text: str) -> str:

@@ -5,11 +5,11 @@ import random
 from dataclasses import dataclass, replace
 from typing import Iterable, Literal
 
-from meta_gepa_lab.agent import SearchAgent
-from meta_gepa_lab.config import ModelProfile, OptimizerConfig, PromptPolicy
-from meta_gepa_lab.data import EvalExample
-from meta_gepa_lab.metrics import AggregateMetrics, EvaluationRow, aggregate, evaluate_run
-from meta_gepa_lab.retrieval import SearchTools
+from gepa_lab.agent import SearchAgent
+from gepa_lab.config import ModelProfile, OptimizerConfig, PromptPolicy
+from gepa_lab.data import EvalExample
+from gepa_lab.metrics import AggregateMetrics, EvaluationRow, aggregate, evaluate_run
+from gepa_lab.retrieval import SearchTools
 
 MutationScope = Literal["full_program", "answer_only", "multi_prompt"]
 

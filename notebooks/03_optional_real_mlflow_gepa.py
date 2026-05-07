@@ -10,5 +10,5 @@
 
 # COMMAND ----------
 
-from meta_gepa_lab.optional_true_mlflow import print_real_mlflow_gepa_template
+from gepa_lab.optional_true_mlflow import print_real_mlflow_gepa_template
 print_real_mlflow_gepa_template()

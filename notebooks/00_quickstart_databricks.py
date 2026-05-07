@@ -23,6 +23,6 @@
 # COMMAND ----------
 
 import sys
-from meta_gepa_lab import __version__
-print("meta_gepa_lab version:", __version__)
+from gepa_lab import __version__
+print("gepa_lab version:", __version__)
 print("Python:", sys.version)

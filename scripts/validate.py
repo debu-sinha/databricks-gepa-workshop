@@ -2,8 +2,8 @@
 """Offline validation for the no-API lab path."""
 from pathlib import Path
 
-from meta_gepa_lab.config import ExperimentConfig, OptimizerConfig
-from meta_gepa_lab.experiment import run_all
+from gepa_lab.config import ExperimentConfig, OptimizerConfig
+from gepa_lab.experiment import run_all
 
 
 if __name__ == "__main__":

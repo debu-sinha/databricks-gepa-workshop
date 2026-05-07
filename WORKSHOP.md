@@ -43,15 +43,15 @@ Set the framing: this is a teaching test stack with synthetic data and a determi
 
 Two answers:
 
-1. The synthetic scorer is intentionally simple — it's checking keyword overlap and a few structure heuristics, not real customer-grade quality. Real evaluation needs real eval test stackes (LLM judges, human grading, downstream task accuracy).
+1. The synthetic scorer is intentionally simple — it's checking keyword overlap and a few structure heuristics, not real customer-grade quality. Real evaluation needs real eval pipelines (LLM judges, human grading, downstream task accuracy).
 2. The cost numbers are derived from token counts and a fixed price-per-token table, not real billing. They're useful for relative comparisons within a single run, not for absolute customer pricing.
 
 ### When attendees want to swap in their own data
 
 The two extension points are:
 
-1. `src/meta_gepa_lab/data.py` — replace `enterprise_documents()` and `eval_examples()` with their own corpus + question set
-2. `src/meta_gepa_lab/metrics.py` — wire in their real eval test stack if they have one
+1. `src/gepa_lab/data.py` — replace `enterprise_documents()` and `eval_examples()` with their own corpus + question set
+2. `src/gepa_lab/metrics.py` — wire in their real eval test stack if they have one
 
 Everything else (retrieval tools, agent, optimizer, scorecard) is reusable.
 

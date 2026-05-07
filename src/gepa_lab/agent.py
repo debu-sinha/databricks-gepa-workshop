@@ -4,9 +4,9 @@ import re
 from dataclasses import asdict, dataclass
 from time import perf_counter
 
-from meta_gepa_lab.config import ModelProfile, PromptPolicy
-from meta_gepa_lab.data import Document
-from meta_gepa_lab.retrieval import SearchResult, SearchTools, merge_results, tokenize
+from gepa_lab.config import ModelProfile, PromptPolicy
+from gepa_lab.data import Document
+from gepa_lab.retrieval import SearchResult, SearchTools, merge_results, tokenize
 
 
 @dataclass(frozen=True)

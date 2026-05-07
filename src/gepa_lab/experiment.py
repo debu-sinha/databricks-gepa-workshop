@@ -3,8 +3,8 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from meta_gepa_lab.agent import SearchAgent
-from meta_gepa_lab.config import (
+from gepa_lab.agent import SearchAgent
+from gepa_lab.config import (
     CURRENT_APP_BASELINE_POLICY,
     CURRENT_LARGE_MODEL,
     MLFLOW_STYLE_START_POLICY,
@@ -13,11 +13,11 @@ from meta_gepa_lab.config import (
     ExperimentConfig,
     OptimizerConfig,
 )
-from meta_gepa_lab.data import build_documents, build_eval_examples, by_split
-from meta_gepa_lab.metrics import aggregate, evaluate_agent, evaluate_run
-from meta_gepa_lab.mini_gepa import run_mini_gepa
-from meta_gepa_lab.mlflow_utils import try_log_to_mlflow
-from meta_gepa_lab.reporting import (
+from gepa_lab.data import build_documents, build_eval_examples, by_split
+from gepa_lab.metrics import aggregate, evaluate_agent, evaluate_run
+from gepa_lab.mini_gepa import run_mini_gepa
+from gepa_lab.mlflow_utils import try_log_to_mlflow
+from gepa_lab.reporting import (
     aggregate_to_row,
     ensure_dir,
     optimizer_to_artifacts,
@@ -27,7 +27,7 @@ from meta_gepa_lab.reporting import (
     write_json,
     write_jsonl,
 )
-from meta_gepa_lab.retrieval import SearchTools
+from gepa_lab.retrieval import SearchTools
 
 
 def run_all(config: ExperimentConfig | None = None) -> dict:

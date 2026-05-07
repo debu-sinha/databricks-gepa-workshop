@@ -2,7 +2,7 @@
 
 ## 1. Build the tiny enterprise corpus
 
-`src/meta_gepa_lab/data.py` creates 15 fictional documents that mimic the types of content in the KARL evaluation plan:
+`src/gepa_lab/data.py` creates 15 fictional documents that mimic the types of content in the KARL evaluation plan:
 
 - policy docs
 - operational docs
@@ -15,7 +15,7 @@ It also creates 18 eval questions split into train/dev/test.
 
 ## 2. Retrieve evidence
 
-`src/meta_gepa_lab/retrieval.py` implements three toy tools:
+`src/gepa_lab/retrieval.py` implements three toy tools:
 
 | Tool | Real-world analogue | Good for |
 |---|---|---|
@@ -25,7 +25,7 @@ It also creates 18 eval questions split into train/dev/test.
 
 ## 3. Run agents
 
-`src/meta_gepa_lab/agent.py` runs a search agent with a `PromptPolicy`.
+`src/gepa_lab/agent.py` runs a search agent with a `PromptPolicy`.
 
 The policy controls the same kind of text/program behavior you would tune in the real engagement:
 
@@ -42,7 +42,7 @@ The policy controls the same kind of text/program behavior you would tune in the
 
 ## 4. Evaluate
 
-`src/meta_gepa_lab/metrics.py` reports:
+`src/gepa_lab/metrics.py` reports:
 
 - Recall@5
 - Recall@10
@@ -69,7 +69,7 @@ grounding miss: answer has no citations
 
 ## 5. Optimize
 
-`src/meta_gepa_lab/mini_gepa.py` runs a deterministic GEPA-style loop:
+`src/gepa_lab/mini_gepa.py` runs a deterministic GEPA-style loop:
 
 ```text
 candidate policy
@@ -85,7 +85,7 @@ The MLflow-style path defaults to final answer prompt behavior only.
 
 ## 6. Compare
 
-`src/meta_gepa_lab/experiment.py` writes the final scorecard:
+`src/gepa_lab/experiment.py` writes the final scorecard:
 
 ```text
 current high-cost app baseline

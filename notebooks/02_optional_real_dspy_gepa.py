@@ -10,5 +10,5 @@
 
 # COMMAND ----------
 
-from meta_gepa_lab.optional_true_dspy import run_real_dspy_gepa_if_available
+from gepa_lab.optional_true_dspy import run_real_dspy_gepa_if_available
 run_real_dspy_gepa_if_available()
